@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}
+<title>Librería Flask</title>
+{% endblock %}
+
+{% block contenido %}
+<article>
+    <p class="titulo1">Lista de Libros</p> 
+    <ul>
+        {% for titulo in datos %}
+            <li><a href="/libro/{{titulo.isbn}}">{{titulo.title}}</a></li>
+        {% endfor -%}
+    </ul>
+</article> 
+{% endblock %}

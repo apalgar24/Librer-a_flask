@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/main.css" type="text/css">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="styles.css">
+    {% block title %}
+    <title>Librería FLask</title>
+    {% endblock %}
+</head>
+<body>
+    <header>        
+             <fieldset class="banner"> 
+            <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="static/Imagenes/apalomino.png" alt="" class="apalomino">
+                            </div>
+                        </td>
+                        <td class="logo">             
+                       
+                        </td>
+                        <td>
+                            <div>
+                                <img src="static/Imagenes/logo.gif" alt="" class="logo">
+                            </div> 
+                        </td>
+                    </tr>
+                </table>
+            </fieldset >
+    </header>
+    <hr class="especial">
+    <fieldset class="body" > 
+        <section>
+            {% block contenido %} {% endblock %}
+        </section>  
+    </fieldset>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+    <div id="footer">
+            <fieldset style="background-color: gray;" class="fieldsetfoot">
+                <br>
+                
+                <p class="footer">
+                    Esta Página ha sido creada por Adrián Palomino García, para saber más dirígete a <a class="footer" href="https://dit.gonzalonazareno.org/moodle/#"> la página web del centro</a> escolar donde cursa este alumno.
+                </p>
+                
+            </fieldset>
+    </div>
+</body>
+</html>
